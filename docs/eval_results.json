@@ -1,0 +1,758 @@
+{
+  "generated_at": "2026-09-27T21:09:30+00:00",
+  "golden_set": "tests/eval/golden_set.json",
+  "tenant_id": "e8d78ef2-ade1-4806-ac8d-b97093daf858",
+  "top_k": 5,
+  "llm": "ollama (qwen3:14b)",
+  "summary": {
+    "avg_recall": 1.0,
+    "n_questions": 20,
+    "avg_fact_coverage": 0.9083,
+    "n_full_recall": 20,
+    "n_answered": 20,
+    "n_ranked_first": 19,
+    "avg_expected_rank": 1.05
+  },
+  "retrieval_legs": {
+    "Retrieval calls": "20",
+    "Both legs contributed": "1 / 20",
+    "Vector leg only": "19 / 20",
+    "Full-text leg only": "0 / 20",
+    "Neither leg": "0 / 20",
+    "Full-text candidates returned": "1"
+  },
+  "spans": [
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.52,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "overview_headcount"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 4648.48,
+      "first_ms": 4050.76,
+      "outcome": "ok",
+      "case_id": "overview_headcount"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.31,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "overview_revenue_2024"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1382.99,
+      "first_ms": 649.89,
+      "outcome": "ok",
+      "case_id": "overview_revenue_2024"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.38,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "overview_shipment_volume"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1229.24,
+      "first_ms": 634.53,
+      "outcome": "ok",
+      "case_id": "overview_shipment_volume"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.47,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "overview_citation_floor"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1286.68,
+      "first_ms": 637.6,
+      "outcome": "ok",
+      "case_id": "overview_citation_floor"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.27,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "overview_2026_targets"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 2004.9,
+      "first_ms": 570.87,
+      "outcome": "ok",
+      "case_id": "overview_2026_targets"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.34,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "returns_window_length"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1385.95,
+      "first_ms": 738.24,
+      "outcome": "ok",
+      "case_id": "returns_window_length"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.02,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "returns_window_start"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 705.42,
+      "first_ms": 370.29,
+      "outcome": "ok",
+      "case_id": "returns_window_start"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.59,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "returns_damage_deadline"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1346.78,
+      "first_ms": 746.65,
+      "outcome": "ok",
+      "case_id": "returns_damage_deadline"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.85,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "returns_refund_or_replacement"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1494.87,
+      "first_ms": 584.13,
+      "outcome": "ok",
+      "case_id": "returns_refund_or_replacement"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.03,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "returns_escalation_limit"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 658.39,
+      "first_ms": 294.35,
+      "outcome": "ok",
+      "case_id": "returns_escalation_limit"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.02,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "sla_availability_target"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1579.11,
+      "first_ms": 650.13,
+      "outcome": "ok",
+      "case_id": "sla_availability_target"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.3,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "sla_support_hours"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1206.35,
+      "first_ms": 515.14,
+      "outcome": "ok",
+      "case_id": "sla_support_hours"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.54,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "sla_severity_one_response"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 960.73,
+      "first_ms": 647.8,
+      "outcome": "ok",
+      "case_id": "sla_severity_one_response"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.12,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "sla_service_credit"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1667.57,
+      "first_ms": 636.23,
+      "outcome": "ok",
+      "case_id": "sla_service_credit"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.6,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "sla_recovery_objectives"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1374.3,
+      "first_ms": 654.69,
+      "outcome": "ok",
+      "case_id": "sla_recovery_objectives"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.53,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "cobalt_probe_interval"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1292.64,
+      "first_ms": 740.88,
+      "outcome": "ok",
+      "case_id": "cobalt_probe_interval"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.79,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "cobalt_mapping_duration"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 598.11,
+      "first_ms": 114.28,
+      "outcome": "ok",
+      "case_id": "cobalt_mapping_duration"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 6.39,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "cobalt_mapping_repeats"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1298.63,
+      "first_ms": 361.2,
+      "outcome": "ok",
+      "case_id": "cobalt_mapping_repeats"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.14,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "cobalt_emergency_callout"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1319.17,
+      "first_ms": 787.67,
+      "outcome": "ok",
+      "case_id": "cobalt_emergency_callout"
+    },
+    {
+      "stage": "retrieve",
+      "duration_ms": 7.17,
+      "first_ms": null,
+      "outcome": "ok",
+      "case_id": "cobalt_alarm_relay"
+    },
+    {
+      "stage": "llm_ttft",
+      "duration_ms": 1806.18,
+      "first_ms": 750.36,
+      "outcome": "ok",
+      "case_id": "cobalt_alarm_relay"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "overview_headcount",
+      "question": "How many people does Northwind Logistics employ?",
+      "expected_documents": [
+        "sample.txt"
+      ],
+      "retrieved_documents": [
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "310|three hundred and ten"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Northwind Logistics employs 310 people. Approximately half of them work in operations, and the other half in engineering."
+    },
+    {
+      "case_id": "overview_revenue_2024",
+      "question": "What revenue did Northwind book in the 2024 fiscal year, and how much of it was software?",
+      "expected_documents": [
+        "sample.txt"
+      ],
+      "retrieved_documents": [
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "a386ae3e-748e-4367-80fd-010cfd519c00"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "68|sixty-eight",
+        "54|fifty-four"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Northwind booked 68 million euros in revenue for the 2024 fiscal year, with 54 million euros coming from subscription software."
+    },
+    {
+      "case_id": "overview_shipment_volume",
+      "question": "How many shipments per month does Northwind handle, and by which transport modes?",
+      "expected_documents": [
+        "sample.txt"
+      ],
+      "retrieved_documents": [
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "40000|forty thousand",
+        "rail",
+        "ocean"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Northwind handles close to 40,000 shipments per month across road, rail, ocean, and air."
+    },
+    {
+      "case_id": "overview_citation_floor",
+      "question": "What accuracy do Northwind contracts promise on the assistant's citations, and how often is it audited?",
+      "expected_documents": [
+        "sample.txt"
+      ],
+      "retrieved_documents": [
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 0.5,
+      "facts_hit": [
+        "90|ninety"
+      ],
+      "facts_missed": [
+        "day per month|one day"
+      ],
+      "top_k": 5,
+      "answer": "Northwind contracts promise a 90 percent citation accuracy floor. The company's own team audits answers against shipment records once per month."
+    },
+    {
+      "case_id": "overview_2026_targets",
+      "question": "What did Northwind commit to for 2026, including the SOC 2 deadline?",
+      "expected_documents": [
+        "sample.txt"
+      ],
+      "retrieved_documents": [
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "demurrage",
+        "15|fifteen",
+        "soc 2"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Northwind committed to a 15 percent reduction in preventable demurrage charges and a median first-response time under four seconds for the assistant. They also aim for full SOC 2 Type II certification of the customer-facing platform by the end of the third quarter in 2026."
+    },
+    {
+      "case_id": "returns_window_length",
+      "question": "How long do I have to return a hardware device to Northwind?",
+      "expected_documents": [
+        "northwind_returns_faq.txt"
+      ],
+      "retrieved_documents": [
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "45|forty-five"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "You have forty-five days from the delivery date to return a hardware device, as long as it is in original packaging with all accessories."
+    },
+    {
+      "case_id": "returns_window_start",
+      "question": "Does the Northwind return period start on the order date or on the delivery date?",
+      "expected_documents": [
+        "northwind_returns_faq.txt"
+      ],
+      "retrieved_documents": [
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "delivery date"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "The return period starts on the delivery date, not the order date."
+    },
+    {
+      "case_id": "returns_damage_deadline",
+      "question": "How quickly must I report a shipment that arrived damaged?",
+      "expected_documents": [
+        "northwind_returns_faq.txt"
+      ],
+      "retrieved_documents": [
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "7|seven",
+        "photograph|photo|photographs"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "You must report a damaged shipment within seven calendar days of delivery, along with photographs of the outer packaging and the unit itself."
+    },
+    {
+      "case_id": "returns_refund_or_replacement",
+      "question": "If my damaged delivery is approved, do I get money back or a new unit?",
+      "expected_documents": [
+        "northwind_returns_faq.txt"
+      ],
+      "retrieved_documents": [
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 0.5,
+      "facts_hit": [
+        "replaced|replacement"
+      ],
+      "facts_missed": [
+        "not refunded|never refunded"
+      ],
+      "top_k": 5,
+      "answer": "If your damaged delivery is approved, you will receive a replacement unit, not a refund. Refunds are only given for certain situations, such as cancelled annual plans within the first thirty days."
+    },
+    {
+      "case_id": "returns_escalation_limit",
+      "question": "Who can approve a refund settlement above twenty thousand euros?",
+      "expected_documents": [
+        "northwind_returns_faq.txt"
+      ],
+      "retrieved_documents": [
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "head of customer operations",
+        "20000|twenty thousand"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "The Head of Customer Operations can approve a refund settlement above twenty thousand euros."
+    },
+    {
+      "case_id": "sla_availability_target",
+      "question": "What monthly uptime does Northwind commit to, and is it higher on the Growth plan?",
+      "expected_documents": [
+        "northwind_sla_support.txt"
+      ],
+      "retrieved_documents": [
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "9995|ninety-nine point nine five",
+        "9999|ninety-nine point nine nine"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Northwind commits to 99.95% monthly uptime for the tracking API and customer web application. The Growth plan has a higher commitment of 99.99% uptime."
+    },
+    {
+      "case_id": "sla_support_hours",
+      "question": "When is the Northwind support desk staffed, and in which timezone?",
+      "expected_documents": [
+        "northwind_sla_support.txt"
+      ],
+      "retrieved_documents": [
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "07:00|seven",
+        "20:00|eight pm",
+        "central european"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "The Northwind support desk is staffed Monday to Friday from 07:00 to 20:00 Central European Time."
+    },
+    {
+      "case_id": "sla_severity_one_response",
+      "question": "How quickly must a Severity 1 incident at Northwind get a response?",
+      "expected_documents": [
+        "northwind_sla_support.txt"
+      ],
+      "retrieved_documents": [
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "30|thirty",
+        "severity 1"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "A Severity 1 incident must get a response within thirty minutes."
+    },
+    {
+      "case_id": "sla_service_credit",
+      "question": "How is a Northwind service credit calculated when the uptime commitment is missed?",
+      "expected_documents": [
+        "northwind_sla_support.txt"
+      ],
+      "retrieved_documents": [
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "10|ten",
+        "30|thirty",
+        "percentage"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "A service credit is calculated as ten percent (10%) of that month's platform fee for each full percentage point of uptime missed, up to a maximum of thirty percent (30%) of the monthly fee."
+    },
+    {
+      "case_id": "sla_recovery_objectives",
+      "question": "What are Northwind's recovery point and recovery time objectives?",
+      "expected_documents": [
+        "northwind_sla_support.txt"
+      ],
+      "retrieved_documents": [
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "15|fifteen",
+        "8|eight"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Northwind's Recovery Point Objective is fifteen minutes and Recovery Time Objective is four hours for a regional failure, and eight hours for a full-site loss."
+    },
+    {
+      "case_id": "cobalt_probe_interval",
+      "question": "How often do the Cobalt Cold Chain logger probes have to be calibrated?",
+      "expected_documents": [
+        "cobalt_calibration_service.txt"
+      ],
+      "retrieved_documents": [
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "6|six",
+        "3|three",
+        "month"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "Logger probes are calibrated every six months, and every three months for units monitoring vaccine stock under a shared excursion alarm."
+    },
+    {
+      "case_id": "cobalt_mapping_duration",
+      "question": "How long must a temperature mapping study run for a Cobalt pharmacy fridge?",
+      "expected_documents": [
+        "cobalt_calibration_service.txt"
+      ],
+      "retrieved_documents": [
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 0.6667,
+      "facts_hit": [
+        "72|seventy-two",
+        "hour"
+      ],
+      "facts_missed": [
+        "9|nine"
+      ],
+      "top_k": 5,
+      "answer": "A temperature mapping study for a Cobalt pharmacy fridge must run for seventy-two hours at full load."
+    },
+    {
+      "case_id": "cobalt_mapping_repeats",
+      "question": "When does a Cobalt temperature mapping study have to be repeated?",
+      "expected_documents": [
+        "cobalt_calibration_service.txt"
+      ],
+      "retrieved_documents": [
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "1 year|one year|12 months|twelve months",
+        "relocation|relocated|moved",
+        "compressor"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "A Cobalt temperature mapping study must be repeated after a relocation, a change of shelving, or a compressor replacement. It is also valid for one year and must be repeated after that period."
+    },
+    {
+      "case_id": "cobalt_emergency_callout",
+      "question": "What does an out-of-hours emergency callout cost for a Cobalt unit that has already lost temperature?",
+      "expected_documents": [
+        "cobalt_calibration_service.txt"
+      ],
+      "retrieved_documents": [
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91",
+        "1dffe3a6-c47f-4833-bf08-767145b55533"
+      ],
+      "first_expected_rank": 2,
+      "recall": 1.0,
+      "fact_coverage": 0.5,
+      "facts_hit": [
+        "twice|double|2x"
+      ],
+      "facts_missed": [
+        "warranty"
+      ],
+      "top_k": 5,
+      "answer": "An out-of-hours emergency callout for a Cobalt unit that has lost temperature costs twice the standard rate."
+    },
+    {
+      "case_id": "cobalt_alarm_relay",
+      "question": "How is the Cobalt alarm threshold set, and what is the rear relay rated for?",
+      "expected_documents": [
+        "cobalt_calibration_service.txt"
+      ],
+      "retrieved_documents": [
+        "f3053403-1ee6-4820-91bd-9e28e5f3ff91",
+        "a386ae3e-748e-4367-80fd-010cfd519c00",
+        "40d6e43b-0235-4d13-ac5c-073f8b7f3f64"
+      ],
+      "first_expected_rank": 1,
+      "recall": 1.0,
+      "fact_coverage": 1.0,
+      "facts_hit": [
+        "2|two",
+        "3|three",
+        "amp|amperes"
+      ],
+      "facts_missed": [],
+      "top_k": 5,
+      "answer": "The Cobalt alarm threshold is set at plus two degrees above target for two to eight degree units and plus three degrees for minus twenty degree units. The rear panel alarm relay is rated two amperes at thirty volts."
+    }
+  ]
+}
